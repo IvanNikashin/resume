@@ -7,87 +7,146 @@
     <meta name="keywords" content="Сайт-резюме, резюме, Иван Никашин, Ivan Nikashin, Front-end">
     <meta name="description" content="Этот сайт - место информации о Front-end разработчике Иване Никашине">
     <title>Иван Никашин</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <img src="Wedding_190.jpg" alt="фото" width="150">
-   <h1>Никашин Иван</h1>
-   <h2>Сайт-резюме</h2>
-   <p><strong> Здесь </strong> собрана вся актуальная информация о моём <em> опыте </em>  и <em> умениях</em></p><br>
-  <h4>Список социальных сетей:</h4>
-   <a href="https://t.me/Astargo" target="_blank">Telegram</a>
-   |
-   <a href="https://vk.com/astargo" target="_blank">ВКонтакте</a>
-   |
-   <a href="https://wa.me/+79309620098" target="_blank">WhatsApp</a>
-   
-   <h2> Мои увлечения:</h2>
-        <ol> 
-            <li>Спорт</li>
-            <li>Чтение</li>
-            <li>Програмирование</li>
-            <li>Кино</li>
-            <li>Настольные игры</li>
-     </ol>
-     <h2> Мои умения:</h2>
-     <ol> 
-         <li>HTML</li>
-         <li>CSS</li>
-         <li>JavaScript</li>
-         <li>Git</li>
-         <li>Photoshop</li>
-         <li>Figma</li>
-         <li>Управление персоналом</li>
-         <li>Обучение персонала</li>
-         <li>Найм и поиск персонала</li>
-  </ol>
-     <h2> Опыт работы:</h2>
-   <table border="2">
-            <thead>
-                <tr>
-                    <th>Место работы</th>
-                    <th>Время</th>
-                    <th>Должность</th>
-                </tr>
-             </thead>
-             <tbody>
-                <tr>
-                    <td>ООО Завод Кофе</td>
-                    <td>2016-2018</td>
-                    <td>Старщий Бариста</td>
-                </tr>
-                <tr>
-                    <td>Био-бистро Циники</td>
-                    <td>2018-2020</td>
-                    <td>Управляющий</td>
-                </tr>
-            
-                <tr>
-                    <td>ООО НГК Кашира</td>
-                    <td>2020-2023</td>
-                    <td>Технолог</td>
-                </tr>
-             </tbody>
-   </table>
-   <h2>Напишите мне:</h2>
-   <form action="/">
-            <div>
-                    <label for="name">Ваше имя</label>
-                    <input type="text" id="name" placeholder="Ваше имя">
+    <div class="container">
+                <div class="info">
+                    <img src="Wedding_190.jpg" alt="фото" class="avatar" >
+                    
+                    <div class="info-text">
+                        
+                        <h1>Никашин Иван</h1>
+                        
+                        <h2>Junior front-end разработчик</h2>
+                        
+                        <p> На данной странице показаны мои навыки, знания, увлечения и где я работал.</p><br>
+                
+                        <h4>Как можно со мной связаться:</h4>
+                                
+                        <a href="https://t.me/Astargo" target="_blank">Telegram</a>
+                        |
+                        <a href="https://vk.com/astargo" target="_blank">ВКонтакте</a>
+                        |
+                        <a href="https://wa.me/+79309620098" target="_blank">WhatsApp</a>
+                    
+                    </div>
+                
+                </div>
+
+        <div class="card bg-grey">
+            <h2> Мои увлечения:</h2>
+                <ol class="list"> 
+                    <li>Спорт</li>
+                    <li>Чтение</li>
+                    <li>Програмирование</li>
+                    <li>Кино</li>
+                    <li>Настольные игры</li>
+                </ol>
+        </div>  
+
+        <div class="card bg-white">
+            <h2> Мои умения:</h2>
+                <ul class="link-list1"> 
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Git</li>
+                    <li>Photoshop</li>
+                    <li>Figma</li>
+                    <li>Управление персоналом</li>
+                    <li>Обучение персонала</li>
+                    <li>Найм и поиск персонала</li>
+                </ul>
+        </div>
+    
+        <div class="card bg-grey">
+        <h2> Пройденные курсы:</h2>
+            <ul class="link-list"> 
+                <li>ITProger HTML</li>
+                <li>ITProger CSS</li>
+                <li>ITlogia Интенсив Front-end</li>
+                <li>Result School HTML & CSS</li>
+                <li>Stepik HTML CSS JS</li>
+                <li>Geekbrain "Управление персоналом"</li>
+            </ul>
+        </div>
+
+            <div class="card bg-white">
+                <h2> Прочитана литература:</h2>
+                    <ol class="list"> 
+                        <li>Эрик Фримен "Изучаем HTML XHTML CSS"</li>
+                        <li>Морган Ник "Java Script для детей" </li>
+                        <li>Эрик Фримен "Изучаем HTML5"</li>
+                    </ol>
+            </div>
+    
+        <div class="card bg-grey">
+
+            <h2 > Опыт работы:</h2>
+
+                <table  class="table">
+
+                    <thead>
+
+                        <tr>
+                            <th>Место работы</th>
+                            <th class="table-time">Время</th>
+                            <th >Должность</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                            <tr>
+                                <td>ООО "Завод Кофе"</td>
+                                <td>2016 - 2018 год.</td>
+                                <td>Старщий бариста</td>
+                            </tr>
+
+                            <tr>
+                                <td>Био-бистро "Циники"</td>
+                                <td>2018 - 2020 год.</td>
+                                <td>Управляющий</td>
+                            </tr>
+
+                            <tr >
+                                <td>ООО "НГК Кашира"</td>
+                                <td>2020 - 2023 год.</td>
+                                <td>Технолог</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
             </div>
 
-            <div>
-                <label for="email">Ваш email</label>
-                <input type="email" id="email" placeholder="Ваше email">
-            </div>
+    <form action="/" class="form">
+        <h2>Напишите мне:</h2>
 
-            <div>
-                <label for="message">Ваше сообщение</label> 
-                <br>
+                <div class="form-row">
+                    <div class="form-group">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" id="name" placeholder="Ваше имя">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Ваше email">
+                    </div>
+                </div>
+
+            <div class="form-group">
+                <label  for="message">Ваше сообщение:</label> 
                 <textarea id="message"  cols="30" rows="10" placeholder="Ваше сообщение..."></textarea>
             </div>
 
-            <button type="submit">Отправить!</button>
-        
+            <div class="btn-centr">
+                <input class="btn" type="submit"  value="Отправить!">
+            </div>
     </form>
+</div>
 </body>
 </html>
