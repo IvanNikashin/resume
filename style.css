@@ -69,12 +69,29 @@ a:active{
 
 .card {
     border-radius: 20px;
-    padding: 15px 40px;
+    padding: 30px 40px;
     margin-bottom: 20px;
 }
 
 .card h2 {
     margin-bottom: 30px;
+}
+
+.curse img {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, .25);
+    transition: 1s;
+}
+
+.curse img:hover{
+transform: scale(1.6);
+
+}
+
+.curse li{
+    display: inline;
+    padding-right: 20px;
 }
 
 .bg-grey {
@@ -134,17 +151,20 @@ table {
     width: 650px;
     height: 150px;
     border-collapse: collapse;
-    border: 2px solid #9a9fa6;
+    border: 2px solid #c0c7d1;
+    margin: auto;
+    border-bottom: 1px solid #9a9fa6;
+    
     }
     
     td {
     padding: 20px;
-    border-bottom: 1px solid #c0c7d1 ;
+    border-bottom: 1px solid #9a9fa6 ;
     text-align: center;
     }
 
     th{
-        border-bottom: 2px solid #c0c7d1 ;
+        border-bottom: 2px solid #9a9fa6 ;
         padding: 10px;
     }
 
@@ -247,3 +267,4 @@ margin: 0 0 10px;
 .btn-centr {
     text-align: center;
 }
+
