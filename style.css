@@ -64,6 +64,7 @@ a:active{
     .info {
         display: block;
         text-align: center;
+        margin: auto;
     }
 }
 
@@ -90,8 +91,7 @@ transform: scale(1.6);
 }
 
 .curse li{
-    display: inline;
-    padding-right: 20px;
+    padding:0 10px;
 }
 
 .bg-grey {
@@ -125,14 +125,17 @@ cursor: pointer;
     margin-bottom: 10px;
 }
 
-.link-list  {
+.link-list {
     list-style: none;
     padding: 0;
 }
 
-.link-list1  {
+.curse {
     list-style: none;
     padding: 0;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .link-list li{
@@ -268,3 +271,89 @@ margin: 0 0 10px;
     text-align: center;
 }
 
+@property --p{
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+  }
+  
+  .pie {
+    --p:20;
+    --b:22px;
+    --c:darkred;
+    --w:150px;
+    
+    width:var(--w);
+    aspect-ratio:1;
+    position:relative;
+    display:inline-grid;
+    margin:5px;
+    place-content:center;
+    font-size:25px;
+    font-weight:bold;
+    font-family:sans-serif;
+  }
+  .pie:before,
+  .pie:after {
+    content:"";
+    position:absolute;
+    border-radius:50%;
+  }
+  .pie:before {
+    inset:0;
+    background:
+      radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat,
+      conic-gradient(var(--c) calc(var(--p)*1%),blue 0);
+    -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+            mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+  }
+  .pie:after {
+    inset:calc(50% - var(--b)/2);
+    background:var(--c);
+    transform:rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+  }
+  .animate {
+    animation:p 1s .5s both;
+    width: 150px;
+  }
+  .no-round:before {
+    background-size:0 0,auto;
+  }
+  .no-round:after {
+    content:none;
+  }
+  @keyframes p {
+    from{--p:0}
+  }
+  
+  .diagram{ 
+  margin: 20px;
+  display: inline-block;
+  }
+
+}
+.diagram::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    flex-shrink: 1;
+}
+
+.diagram .one {
+    margin: 5px;
+    width: 300px;
+    align-items: left;
+    border: 1px solid black;
+}
+
+.circle {
+    display:inline-block;
+    align-items: center;
+    height: 100px;
+    width: 100px ;
+    padding-left: 20px;
+}
+
+.diagram .one:last-child{
+    align-items: right;
+}
