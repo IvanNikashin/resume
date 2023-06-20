@@ -154,20 +154,20 @@ table {
     width: 650px;
     height: 150px;
     border-collapse: collapse;
-    border: 2px solid #c0c7d1;
+    border: 2px solid #9a9fa6;
     margin: auto;
-    border-bottom: 1px solid #9a9fa6;
+    border-bottom: 1px solid #c0c7d1;
     
     }
     
     td {
     padding: 20px;
-    border-bottom: 1px solid #9a9fa6 ;
+    border-bottom: 1px solid #c0c7d1 ;
     text-align: center;
     }
 
     th{
-        border-bottom: 2px solid #9a9fa6 ;
+        border-bottom: 2px solid #c0c7d1 ;
         padding: 10px;
     }
 
